@@ -1,0 +1,134 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --main-color: #DF367D;
+  --bg-color: #141321;
+}
+body {
+  font-family: 'Cairo', sans-serif;
+  line-height: 1;
+  position: relative;
+  min-height: calc(100vh - 30px);
+  background-image: linear-gradient(to right top, #141321, #352447, #672f66, #a23479, #df367d);
+}
+.container {
+  background-color: #c5c0c0;
+  width: 70%;
+  margin: 30px auto;
+  padding: 30px;
+}
+@media (max-width: 570px) {
+  .container {
+    width: 85%;
+    padding: 20px;
+  }
+}
+.container form {
+  background-color: #E0E0E0;
+  padding: 20px;
+  display: flex
+}
+@media (max-width: 570px) {
+  form {
+    padding: 14px;
+  }
+}
+form input {
+  padding: 18px;
+  width: 85%;
+  font-size: 18px;
+  border: none
+}
+@media (max-width: 570px) {
+  form input {
+    padding: 12px;
+  }
+}
+form input:focus {
+  outline-color: var(--main-color);
+}
+.container button {
+  border: none;
+  color: white;
+  background-color: var(--main-color);
+  font-size: 16px;
+  font-weight: 600;
+  white-space: nowrap;
+  padding: 18px;
+  cursor: pointer
+}
+@media (max-width: 570px) {
+  .container button {
+    font-size: 11px;
+    padding: 9px;
+  }
+}
+.repos-container > p {
+  margin-top: 20px;
+}
+.container .repo {
+  background-color: var(--bg-color);
+  padding: 15px 20px;
+  margin: 15px 0;
+  position: relative;
+}
+.repo h3 {
+  color: var(--main-color);
+  margin: 5px 0;
+}
+.repo p {
+  color: #B8F4F1;
+}
+.repo .info {
+  color: #B8F4F1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  white-space: nowrap;
+  gap: 50px;
+  margin-top: 20px;
+}
+@media (max-width: 570px) {
+  .repo .info {
+    gap: 18px;
+  }
+}
+@media (max-width: 460px) {
+  .repo .info {
+    justify-content: center
+  }
+}
+.langs span {
+  position: relative;
+  top: 0;
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  background-color: #FCDF6E;
+  border-radius: 50%;
+}
+.icon-star-empty {
+  margin-right: 4px;
+  color: #FCDF6E;
+}
+.view {
+  margin-left: auto;
+  padding: 10px 20px !important;
+}
+@media (max-width: 570px) {
+  .view {
+    padding: 8px 15px !important;
+  }
+}
+@media (max-width: 460px) {
+  .view {
+    margin: 0;
+  }
+}
+a {
+  text-decoration: none;
+  color: white;
+}
