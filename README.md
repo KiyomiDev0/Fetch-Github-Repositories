@@ -1,5 +1,5 @@
 # Fetch-Github-Repositories
-This is simple program that fetches repositories by the Username
+A simple app that fetches the repositories by a Github username
 
 Usage example:
 
